@@ -12,7 +12,7 @@ class PeopleViewSet(viewsets.ModelViewSet):
     """
     queryset = People.objects.all()
     serializer_class = PeopleSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.IsAuthenticated]
 
     def list(self, request, *args, **kwargs):
         # You can add additional logic here

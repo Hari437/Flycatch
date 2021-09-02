@@ -1,5 +1,6 @@
 Notes:
-	- Admin credentials :(devadmin, 12345)
+	- Please run ./manage.py createsuperuser for admin access
+	(You can run bootstrap.sh for quick setup)
 	- Used sqlite3
  	- Have used viewset instead of views and in built mixins for list, update and delete objects for redundancy. Also used routers for registering
 

@@ -1,5 +1,5 @@
 #! /usr/bin/env python
-import pyodbc, sqlite3
+import  sqlite3
 from contextlib import contextmanager
 from pandas import read_csv, DataFrame
 
