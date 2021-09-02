@@ -39,7 +39,10 @@ def main():
     insert_query = "INSERT INTO %s (id,first_name,last_name,email,profession) VALUES (?,?,?,?,?)" %TABLE_NAME
     with get_sqlite_conn(DB_NAME) as conn:
         cur = conn.cursor()
-        cur.executemany(insert_query, df.itertuples(index=False))
+        try:
+            cur.executemany(insert_query, df.itertuples(index=False))
+        except sqlite3.IntegrityError:
+            print("Sorry, data with same ID's are already found")
         conn.commit()
 
 
