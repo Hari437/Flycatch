@@ -1,3 +1,4 @@
 conf
 **/*.pyc
 media
+db.sqlite3
