@@ -1,5 +1,5 @@
 Notes:
-	- I have excluded DB from git. 
+	- I have excluded DB from git. Have used sqlite3 for DB.
 	- Run "python manage.py migrate" for quick DB setup
 	(You can run bootstrap.sh for quick setup)
 	- Used sqlite3
