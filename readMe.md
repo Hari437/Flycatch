@@ -1,5 +1,6 @@
 Notes:
-	- Please run ./manage.py createsuperuser for admin access
+	- I have excluded DB from git. 
+	- Run "python manage.py migrate" for quick DB setup
 	(You can run bootstrap.sh for quick setup)
 	- Used sqlite3
  	- Have used viewset instead of views and in built mixins for list, update and delete objects for redundancy. Also used routers for registering
